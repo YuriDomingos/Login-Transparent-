@@ -1,0 +1,126 @@
+/*
+@Autor : Yuri Domingos 
+Data   :
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Molle', cursive;
+    /*  i GOTT THING ABOUT THIS LINE  -*/
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: url('litt.jpeg') no-repeat;
+    background-size: cover;
+}
+
+.LoginForm {
+    width: 360px;
+    height: 520px;
+    padding: 80px 40px;
+    background: #18011cbf;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.LoginForm h1 {
+    margin-bottom: 70px;
+    color: #f4f4f4;
+}
+
+.Inputdiv {
+    position: relative;
+    margin: 30px 0;
+    display: block;
+    color: white;
+}
+
+.Inputdiv::after {
+    content: '';
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    width: 80%;
+    height: 1%;
+    transition: .5s;
+    background-color: white;
+}
+
+.Inputdiv i {
+    display: inline;
+    color: white;
+}
+
+.Inputdiv input {
+    display: inline;
+    font-size: 15px;
+    color: white;
+    border: none;
+    width: 70%;
+    outline: none;
+    background: none;
+    padding: 0 0;
+    height: 40%;
+}
+
+span::before {
+    content: attr(data-placeholder);
+    position: absolute;
+    color: #adadad;
+    transform: translateY(-80%);
+    z-index: -1;
+    transition: .5s;
+    top: 26px;
+    right: 45px;
+    width: 100%;
+}
+
+span::after {
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    width: 0%;
+    height: 1px;
+    transition: all .5s ease-in-out;
+    background: linear-gradient(120deg, #ff015f, #9863ae);
+}
+
+.btnlogin {
+    width: 70%;
+    height: 50px;
+    margin: 40px 0;
+    border: none;
+    background-color: crimson;
+    border-radius: 50px;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: .8s;
+    font-size: larger;
+}
+
+.btnlogin:hover {
+    transition: .5s;
+    background-color: #bf0780;
+}
+
+.bottomclass p {
+    color: white;
+    font-size: 20px;
+}
+
+.bottomclass a {
+    color: white;
+    font-size: 24px;
+}
+
+
+/*----------------------*/
